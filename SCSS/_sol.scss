@@ -6,7 +6,7 @@ body{
 }
 
 .headersol{
-	background: url('../Imagenes/sol.jpg');
+	background: url('../Imagenes/fondosol.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -375,16 +375,6 @@ html{
 		border-bottom: 2px solid #ccc;
 		padding: 8px;
 	 }
-}
-
-@media screen and (max-width:768px){
-
-	.sunsistem{
-
-		h2{
-			font-size: 28px;
-		}
-	}
 }
 
 .infosol{
