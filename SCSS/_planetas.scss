@@ -15,6 +15,17 @@ body{
 	z-index: -1;
 }
 
+@media (max-width:480px){
+	.headerplanetas{
+		background: url('../Imagenes/planetas375px.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		max-width: auto;
+
+	}
+}
+
 .tituloheader{
 	color: white;
 	text-align: left;
@@ -28,7 +39,7 @@ body{
 
 @media screen and (max-width:768px){
 
-	.headersistema{
+	.headerplanetas{
 
 		.tituloheader{
 			font-size: 18px;
@@ -38,7 +49,7 @@ body{
 
 @media screen and (max-width:600px){
 
-	.headersistema{
+	.headerplanetas{
 
 		.tituloheader{
 			font-size: 16px;
@@ -213,6 +224,26 @@ body{
 	}
 }
 
+@media (max-width:480px){
+
+	.subtituloplanetas{
+
+		height: 45px;
+
+		h2{
+			margin-top: 10px;
+			font-size: 11px;
+			width: 20%;
+		}
+
+		ul li a{
+
+			font-size: 7.2px;
+			padding: 2px;
+		}
+	}
+}
+
 .barramasplanetas{
 	text-align: center;
     background-color: #64a8df;
@@ -229,6 +260,13 @@ body{
 			text-decoration: none;
 			color: black;
 		}
+}
+
+@media (max-width:480px){
+	.barramasplanetas{
+		font-size: 10px;
+		height: 30px;
+	}
 }
 
 html{
@@ -343,12 +381,28 @@ html{
 	 }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:600px){
 
 	.theplanet{
 
 		h2{
 			font-size: 28px;
+			margin-top: 10px;
+		}
+
+		p{
+			font-size: 15px;
+		}
+	}
+}
+
+@media screen and (max-width:480px){
+
+	.theplanet{
+
+		h2{
+			font-size: 24px;
+			margin-top: 10px;
 		}
 	}
 }
@@ -384,6 +438,19 @@ html{
 
 		h2{
 			font-size: 28px;
+		}
+	}
+}
+
+@media screen and (max-width:480px){
+
+	.titulogrillaplanetas{
+
+		h2{
+			font-size: 25px;
+			margin-left: 25px;
+			margin-right: 25px;
+			padding: 25px;
 		}
 	}
 }
@@ -449,11 +516,34 @@ html{
 @media (max-width:600px){
 	.gallery-planet{
 
+		margin-left: 60px;
+		margin-right: 60px;
+		grid-auto-rows: 190px;
+
 		.gallery__item1{
 
 			.gallery__title1{
 				font-size: 10.5px;
 				text-align: left;
+			}
+		}
+	}
+}
+
+@media (max-width:480px){
+	.gallery-planet{
+
+		margin-left: 40px;
+		margin-right: 40px;
+		grid-auto-rows: 180px;
+
+		.gallery__item1{
+
+			.gallery__title1{
+				font-size: 9.5px;
+				text-align: left;
+				padding: 2px;
+				margin-left: 10px;
 			}
 		}
 	}
@@ -498,244 +588,61 @@ html{
 	}
 }
 
-.titulovideo{
-	font-family: Arial, Helvetica, sans-serif;
-	color: #3A3A3A;
-	font-size: 30px;
-	font-weight: bold;
-	margin-top: 30px;
-	padding: 40px;
-	text-align: center;
-}
-
-@media screen and (max-width:768px){
-	.titulovideo{
-		font-size: 25px;
-	}
-}
-
-@media screen and (max-width:600px){
-	.titulovideo{
-		font-size: 18px;
-	}
-}
-
-.cajavideo{
-	width: 70%;
-	margin: auto;
-}
-
-.timelapse {
-	position: relative;
-	height: 0;
-	padding-bottom: 56.25%;
-	padding-top: 30px;
-	overflow: hidden;
-}
-.timelapse iframe, .timelapse object, .timelapse embed {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-}
-
-.pieindex{
-	background: url('../Imagenes/cieloysilueta.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	min-height: 100vh;
-	width: 100%;
-	z-index: -1;
-	margin-top: 60px;
-}
-
-.galeriapie{
-	width: 900px;
-	height: 400px;
-	margin: 0px auto;
-}
-
-.planeta1{
-	float: left;
-	width: 300px;
-	margin-top: 20px;
-}
-
-.planeta2{
-	float: left;
-	width: 300px;
-	margin-top: 20px;
-}
-
-.planeta3{
-	float: left;
-	width: 300px;
-	margin-top: 20px;
-}
-
-.textoredes{
-	float: left;
-	width: 900px;
-	text-align: center;
-	margin-top: 40px;
-	color: $color;
-}
-
-.cajaredes{
-	display: flex;
-	width: 250px;
-	height: 100px;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	margin: 0px auto;
-}
-
 @media (max-width:900px){
-	.galeriapie{
-		width: 600px;
-		height: 350px;
-		margin: 0px auto;
+
+	.infoplaneta{
+
+		margin-top: 30px;
+		margin-left: 100px;
+		margin-right: 100px;
+
+		h3{
+			font-size: 26px;
+		}
+
+		p{
+			font-size: 17px;
+			text-align: left;
+		}
+
+		ul{
+			font-size: 17px;
+		}
 	}
+}
 
-	.planeta1{
-		float: left;
-		width: 200px;
-		margin-top: 20px;
-			img{
-				float: left;
-				width: 200px;
-			}
-	}	
+@media (max-width:768px){
 
-	.planeta2{
-		float: left;
-		width: 200px;
-		margin-top: 20px;
+	.infoplaneta{
 
-			img{
-				float: left;
-				width: 200px;
-			}
+		margin-top: 30px;
+		margin-left: 40px;
+		margin-right: 40px;
+
 	}
+}
 
-	.planeta3{
-		float: left;
-		width: 200px;
-		margin-top: 20px;
+@media (max-width:480px){
 
-			img{
-				float: left;
-				width: 200px;
-				}
-	}
+	.infoplaneta{
 
-	.textoredes{
-		float: left;
-		width: 600px;
-		text-align: center;
-		margin-top: 20px;
+		margin-top: 30px;
+		margin-left: 40px;
+		margin-right: 40px;
 
-		h2{
+		h3{
 			font-size: 25px;
 		}
 
-	}
+		p{
+			font-size: 15px;
+			text-align: left;
+		}
 
-	.cajaredes{
-		display: flex;
-		width: 200px;
-		height: 100px;
-		flex-direction: row;
-		justify-content: space-around;
-		align-items: center;
-		margin: 0px auto;
-
-			img{
-				width: 40px;
-			};
-	}
-}
-
-@media (max-width:600px){
-	.galeriapie{
-		width: 450px;
-		height: 300px;
-		margin: 0px auto;
-	}
-
-	.planeta1{
-		float: left;
-		width: 150px;
-		margin-top: 20px;
-			img{
-				float: left;
-				width: 150px;
-			}
-	}	
-
-	.planeta2{
-		float: left;
-		width: 150px;
-		margin-top: 20px;
-
-			img{
-				float: left;
-				width: 150px;
-			}
-	}
-
-	.planeta3{
-		float: left;
-		width: 150px;
-		margin-top: 20px;
-			img{
-				float: left;
-				width: 150px;
-				}
-	}
-
-	.textoredes{
-		float: left;
-		width: 450px;
-		text-align: center;
-		margin-top: 10px;
-
-		h2{
-			font-size: 20px;
+		ul{
+			font-size: 15px;
+			margin-left: 2.5em;
+			margin-right: 2.5em;
 		}
 	}
-}
-	
-.menupie ul{
-	margin: 0;
-	list-style: none;
-	padding: 0;
-	display: flex;
-	justify-content: center;
-}
-
-.menupie li a{
-	font-size: 15px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: bold;
-	display: block;
-	padding: 15px 20px;
-	text-decoration: none;
-	color: $color;
-}
-
-@media (max-width:900px){
-	.menupie li a{
-		font-size: 14px;
-	}	
-}
-
-@media (max-width:600px){
-
-	.menupie li a{
-		font-size: 11px;
-	}	
 }

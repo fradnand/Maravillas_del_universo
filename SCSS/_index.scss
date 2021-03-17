@@ -5,6 +5,13 @@ body{
 	overflow-x: hidden;
 }
 
+@media (max-width:480px){
+	html, body {
+		max-width: 100%;
+		overflow-x: hidden;
+	}
+}
+
 .headerindex{
 	background: url('../Imagenes/planetatierra.jpeg');
 	background-size: cover;
@@ -14,6 +21,18 @@ body{
 	width: 100%;
 	z-index: -1;
 }
+
+@media (max-width:480px){
+	.headerindex{
+		background: url('../Imagenes/planetatierra375px.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		max-width: auto;
+
+	}
+}
+
 
 .tituloheader{
 	color: white;
@@ -42,6 +61,16 @@ body{
 
 		.tituloheader{
 			font-size: 16px;
+		}
+	}
+}
+
+@media screen and (max-width:480px){
+
+	.headerindex{
+
+		.tituloheader{
+			font-size: 12px;
 		}
 	}
 }
@@ -87,6 +116,7 @@ body{
 .link3{
 	border-right: $color 1px solid;
 }
+
 
 @media (max-width:768px){
 	.botoninicio label{
@@ -142,6 +172,21 @@ body{
 
 }
 
+@media (max-width:480px){
+	.tierra{
+
+		margin-top: 250px;
+
+		h2{
+			font-size: 25px;
+		}
+
+		p{
+			font-size: 15px;
+		}
+	}
+}
+
 .mainindex{
 	background-color:#e0e7ef;
 }
@@ -163,7 +208,6 @@ body{
 			color: black;
 		}
 }
-
 
 .botonmenu{
 	width: 100%;
@@ -243,6 +287,14 @@ body{
 	}
 }
 
+@media (max-width:480px){
+	.botonmenu{
+		.menu2{
+			margin-left: -100%;
+		}
+	}
+}
+
 .curioso{
 	 h2{
 		font-family: $letra;
@@ -263,6 +315,19 @@ body{
 		font-size: 20px;
 		line-height: 150%;
 	 }
+}
+
+@media screen and (max-width:600px){
+	.curioso{
+		h2{
+			font-size: 28px;
+			margin-top: 10px;
+		}
+
+		p{
+			font-size: 15px;
+		}
+	}
 }
 
 .gallery-container{
@@ -572,6 +637,58 @@ body{
 		}
 	}
 }
+
+@media screen and (max-width:480px){
+
+	.galeriapie{
+		width: 320px;
+		height: 220px;
+		margin: 0px auto;
+	}
+
+	.planeta1{
+		float: left;
+		width: 100px;
+		margin-top: 20px;
+			img{
+				float: left;
+				width: 120px;
+			}
+	}	
+
+	.planeta2{
+		float: left;
+		width: 100px;
+		margin-top: 20px;
+
+			img{
+				float: left;
+				width: 120px;
+			}
+	}
+
+	.planeta3{
+		float: left;
+		width: 100px;
+		margin-top: 20px;
+			img{
+				float: left;
+				width: 120px;
+				}
+	}
+
+	.textoredes{
+		float: left;
+		width: 300px;
+		text-align: center;
+		margin-top: 10px;
+
+		h2{
+			font-size: 17px;
+		}
+	}
+
+}
 	
 .menupie ul{
 	margin: 0;
@@ -598,7 +715,33 @@ body{
 }
 
 @media (max-width:600px){
-	.menupie li a{
-		font-size: 11px;
+
+	.menupie{
+
+		ul{
+			display: block;
+		}
+		
+			li a{
+			font-size: 15px;
+			}
+	}	
+}
+
+@media (max-width:480px){
+
+	.menupie {
+
+		ul{
+			margin-top: 10px;
+			list-style: none;
+			display: block;
+			padding: 0;
+		}
+
+		.menupie li a{
+			font-size: 15px;
+		}
+	
 	}	
 }

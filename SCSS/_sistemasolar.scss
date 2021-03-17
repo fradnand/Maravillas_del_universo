@@ -15,6 +15,17 @@ body{
 	z-index: -1;
 }
 
+@media (max-width:480px){
+	.headersistema{
+		background: url('../Imagenes/sistemasolar375px.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		max-width: auto;
+
+	}
+}
+
 .tituloheader{
 	color: white;
 	text-align: left;
@@ -42,6 +53,16 @@ body{
 
 		.tituloheader{
 			font-size: 16px;
+		}
+	}
+}
+
+@media screen and (max-width:480px){
+
+	.headersistema{
+
+		.tituloheader{
+			font-size: 13px;
 		}
 	}
 }
@@ -249,6 +270,28 @@ body{
 
 }
 
+@media (max-width:480px){
+	.subtitulosistema{
+
+		height: 60px;
+
+		h2{
+			font-size: 14px;
+		}
+
+		.parrafo1{
+			color: #a9d3ee;
+			text-align: center;
+			font-size: 7px;
+		}
+
+		.parrafo2{
+			font-size: 8px;
+		}
+	}
+
+}
+
 .barramas{
 	text-align: center;
     background-color: #64a8df;
@@ -377,15 +420,40 @@ html{
 	 }
 }
 
+@media screen and (max-width:900px){
+
+	.sunsistem{
+
+		h2{
+			font-size: 30px;
+		}
+
+		p{
+			font-size: 18px;
+		}
+	}
+}
+
 @media screen and (max-width:768px){
 
 	.sunsistem{
 
 		h2{
-			font-size: 28px;
+			font-size: 25px;
 		}
 	}
 }
+
+@media screen and (max-width:480px){
+
+	.sunsistem{
+
+		p{
+			font-size: 15px;
+		}
+	}
+}
+
 
 .infosistema{
 	display: grid;
@@ -470,6 +538,23 @@ html{
 	}		
 } 
 
+@media (max-width:480px){
+
+	.infosistema{
+
+		.parrafosinfo{
+			grid-column-start: span 2;
+			font-size: 13px;
+			line-height: 120%;
+		}
+
+		.imageninfo{
+			grid-column-start: span 2;
+			width: 100%;
+		}
+	}		
+} 
+
 .mainsolar{
 	background-color:#e0e7ef;	
 	padding: 5rem 3rem 6.2rem;	
@@ -493,6 +578,20 @@ html{
 			font-size: 28px;
 		}
 	}
+}
+
+@media screen and (max-width:480px){
+
+	.mainsolar{
+
+		.curioso2{
+
+			h2{
+				font-size: 20px;
+				margin-bottom: 25px;
+			}
+		}
+	}	
 }
 
 .systemgallery{
@@ -752,244 +851,23 @@ html{
 	}
 }
 
-.titulovideo{
-	font-family: Arial, Helvetica, sans-serif;
-	color: #3A3A3A;
-	font-size: 30px;
-	font-weight: bold;
-	margin-top: 30px;
-	padding: 40px;
-	text-align: center;
-}
+@media (max-width:480px){
 
-@media screen and (max-width:768px){
-	.titulovideo{
-		font-size: 25px;
-	}
-}
+	.systemgallery{
+		
+		padding: 0;
 
-@media screen and (max-width:600px){
-	.titulovideo{
-		font-size: 18px;
-	}
-}
+		h3{
+			font-size: 1.1rem;
+		}
 
-.cajavideo{
-	width: 70%;
-	margin: auto;
-}
+		p{
+			font-size: .85rem;
+		}
 
-.timelapse {
-	position: relative;
-	height: 0;
-	padding-bottom: 56.25%;
-	padding-top: 30px;
-	overflow: hidden;
-}
-.timelapse iframe, .timelapse object, .timelapse embed {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-}
-
-.pieindex{
-	background: url('../Imagenes/cieloysilueta.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	min-height: 100vh;
-	width: 100%;
-	z-index: -1;
-	margin-top: 60px;
-}
-
-.galeriapie{
-	width: 900px;
-	height: 400px;
-	margin: 0px auto;
-}
-
-.planeta1{
-	float: left;
-	width: 300px;
-	margin-top: 20px;
-}
-
-.planeta2{
-	float: left;
-	width: 300px;
-	margin-top: 20px;
-}
-
-.planeta3{
-	float: left;
-	width: 300px;
-	margin-top: 20px;
-}
-
-.textoredes{
-	float: left;
-	width: 900px;
-	text-align: center;
-	margin-top: 40px;
-	color: $color;
-}
-
-.cajaredes{
-	display: flex;
-	width: 250px;
-	height: 100px;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	margin: 0px auto;
-}
-
-@media (max-width:900px){
-	.galeriapie{
-		width: 600px;
-		height: 350px;
-		margin: 0px auto;
-	}
-
-	.planeta1{
-		float: left;
-		width: 200px;
-		margin-top: 20px;
-			img{
-				float: left;
-				width: 200px;
-			}
-	}	
-
-	.planeta2{
-		float: left;
-		width: 200px;
-		margin-top: 20px;
-
-			img{
-				float: left;
-				width: 200px;
-			}
-	}
-
-	.planeta3{
-		float: left;
-		width: 200px;
-		margin-top: 20px;
-
-			img{
-				float: left;
-				width: 200px;
-				}
-	}
-
-	.textoredes{
-		float: left;
-		width: 600px;
-		text-align: center;
-		margin-top: 20px;
-
-		h2{
-			font-size: 25px;
+		img{
+			width: 100%;
 		}
 
 	}
-
-	.cajaredes{
-		display: flex;
-		width: 200px;
-		height: 100px;
-		flex-direction: row;
-		justify-content: space-around;
-		align-items: center;
-		margin: 0px auto;
-
-			img{
-				width: 40px;
-			};
-	}
 }
-
-@media (max-width:600px){
-	.galeriapie{
-		width: 450px;
-		height: 300px;
-		margin: 0px auto;
-	}
-
-	.planeta1{
-		float: left;
-		width: 150px;
-		margin-top: 20px;
-			img{
-				float: left;
-				width: 150px;
-			}
-	}	
-
-	.planeta2{
-		float: left;
-		width: 150px;
-		margin-top: 20px;
-
-			img{
-				float: left;
-				width: 150px;
-			}
-	}
-
-	.planeta3{
-		float: left;
-		width: 150px;
-		margin-top: 20px;
-			img{
-				float: left;
-				width: 150px;
-				}
-	}
-
-	.textoredes{
-		float: left;
-		width: 450px;
-		text-align: center;
-		margin-top: 10px;
-
-		h2{
-			font-size: 20px;
-		}
-	}
-}
-	
-.menupie ul{
-	margin: 0;
-	list-style: none;
-	padding: 0;
-	display: flex;
-	justify-content: center;
-}
-
-.menupie li a{
-	font-size: 15px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: bold;
-	display: block;
-	padding: 15px 20px;
-	text-decoration: none;
-	color: $color;
-}
-
-@media (max-width:900px){
-	.menupie li a{
-		font-size: 14px;
-	}	
-}
-
-@media (max-width:600px){
-	.menupie li a{
-		font-size: 11px;
-	}	
-}
-
