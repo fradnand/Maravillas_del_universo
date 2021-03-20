@@ -1,0 +1,332 @@
+
+@import "operaciones";
+
+body{
+	overflow-x: hidden;
+}
+
+.bodycontacto{
+	background: url('../Imagenes/fondocontacto.jpg') fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 90vh;
+	width: 100%;
+	z-index: -1;
+}
+
+.headercontacto{
+
+	.tituloheader{
+		color: white;
+		text-align: left;
+		font-family: 'Libre Baskerville', serif;
+		font-size: 20px;
+		font-weight: bold;
+		word-spacing: 5px;
+		padding: 30px;
+		margin-left: 15px;
+	}
+}
+
+@media screen and (max-width:768px){
+
+	.headercontacto{
+
+		.tituloheader{
+			font-size: 18px;
+		}
+	}
+}
+
+@media screen and (max-width:600px){
+
+	.headercontacto{
+
+		.tituloheader{
+			font-size: 16px;
+			padding: 20px;
+		}
+	}
+}
+
+.formulario{
+
+	form{
+		width: 600px;
+		margin: auto;
+		background: rgba(255,255,255,0.4);
+		padding: 10px 20px;
+		box-sizing: border-box;
+		margin-top: 60px;
+		border-radius: 7px;
+	}
+
+	h2{
+		color: $color;
+		text-align: center;
+		margin: 0;
+		font-size: 30px;
+		font-family: $letra;
+		margin-bottom: 20px;
+	}
+
+	input, textarea{
+		width: 100%;
+		margin-bottom: 20px;
+		padding: 7px;
+		box-sizing: border-box;
+		font-size: 17px;
+	}
+
+	textarea{
+		min-height: 100px;
+		max-height: 200px;
+		max-width: 100%;
+	}
+
+	#botonenviar{
+		background: #31384A;
+		color: $color;
+		padding: 20px;
+	}
+
+	#botonenviar:hover{
+		cursor: pointer;
+	}
+}
+
+@media (max-width:600px){
+
+	.formulario{
+
+		form{
+			width: 100%;
+		}
+	}
+}
+
+.piecontacto{
+
+	margin-top: 40px;
+
+	.galeriapie{
+		width: 900px;
+		height: 400px;
+		margin: 0px auto;
+	}
+	
+	.planeta1{
+		float: left;
+		width: 300px;
+		margin-top: 20px;
+	}
+	
+	.planeta2{
+		float: left;
+		width: 300px;
+		margin-top: 20px;
+	}
+	
+	.planeta3{
+		float: left;
+		width: 300px;
+		margin-top: 20px;
+	}
+	
+	.textoredes{
+		float: left;
+		width: 900px;
+		text-align: center;
+		margin-top: 40px;
+		color: $color;
+	}
+	
+	.cajaredes{
+		display: flex;
+		width: 250px;
+		height: 100px;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		margin: 0px auto;
+	}
+}
+
+@media (max-width:900px){
+
+	.piecontacto{
+
+		.galeriapie{
+			width: 600px;
+			height: 350px;
+			margin: 0px auto;
+		}
+	
+		.planeta1{
+			float: left;
+			width: 200px;
+			margin-top: 20px;
+				img{
+					float: left;
+					width: 200px;
+				}
+		}	
+	
+		.planeta2{
+			float: left;
+			width: 200px;
+			margin-top: 20px;
+	
+				img{
+					float: left;
+					width: 200px;
+				}
+		}
+	
+		.planeta3{
+			float: left;
+			width: 200px;
+			margin-top: 20px;
+	
+				img{
+					float: left;
+					width: 200px;
+					}
+		}
+	
+		.textoredes{
+			float: left;
+			width: 600px;
+			text-align: center;
+			margin-top: 20px;
+	
+			h2{
+				font-size: 25px;
+			}
+	
+		}
+	
+		.cajaredes{
+			display: flex;
+			width: 200px;
+			height: 100px;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+			margin: 0px auto;
+	
+				img{
+					width: 40px;
+				};
+		}
+	}
+}
+
+@media (max-width:600px){
+	
+	.piecontacto{
+
+		.galeriapie{
+			width: 450px;
+			height: 300px;
+			margin: 0px auto;
+		}
+	
+		.planeta1{
+			float: left;
+			width: 150px;
+			margin-top: 20px;
+				img{
+					float: left;
+					width: 150px;
+				}
+		}	
+	
+		.planeta2{
+			float: left;
+			width: 150px;
+			margin-top: 20px;
+	
+				img{
+					float: left;
+					width: 150px;
+				}
+		}
+	
+		.planeta3{
+			float: left;
+			width: 150px;
+			margin-top: 20px;
+				img{
+					float: left;
+					width: 150px;
+					}
+		}
+	
+		.textoredes{
+			float: left;
+			width: 450px;
+			text-align: center;
+			margin-top: 10px;
+	
+			h2{
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width:480px){
+
+	.piecontacto{
+
+		.galeriapie{
+			width: 320px;
+			height: 220px;
+			margin: 0px auto;
+		}
+	
+		.planeta1{
+			float: left;
+			width: 100px;
+			margin-top: 20px;
+				img{
+					float: left;
+					width: 120px;
+				}
+		}	
+	
+		.planeta2{
+			float: left;
+			width: 100px;
+			margin-top: 20px;
+	
+				img{
+					float: left;
+					width: 120px;
+				}
+		}
+	
+		.planeta3{
+			float: left;
+			width: 100px;
+			margin-top: 20px;
+				img{
+					float: left;
+					width: 120px;
+					}
+		}
+	
+		.textoredes{
+			float: left;
+			width: 300px;
+			text-align: center;
+			margin-top: 10px;
+	
+			h2{
+				font-size: 17px;
+			}
+		}
+	}
+}

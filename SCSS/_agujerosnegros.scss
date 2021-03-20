@@ -1,0 +1,284 @@
+
+@import "operaciones";
+
+body{
+	overflow-x: hidden;
+}
+
+.headeragujeros{
+	background: url('../Imagenes/agujeronegro.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 90vh;
+	width: 100%;
+	z-index: -1;
+}
+
+@media (max-width:480px){
+	.headeragujeros{
+		background: url('../Imagenes/agujeronegro.jpg') fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		max-width: auto;
+
+	}
+}
+
+.tituloheader{
+	color: white;
+	text-align: left;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 20px;
+	font-weight: bold;
+	word-spacing: 5px;
+	padding: 30px;
+	margin-left: 15px;
+}
+
+@media screen and (max-width:768px){
+
+	.headeragujeros{
+
+		.tituloheader{
+			font-size: 18px;
+		}
+	}
+}
+
+@media screen and (max-width:600px){
+
+	.headeragujeros{
+
+		.tituloheader{
+			font-size: 16px;
+		}
+	}
+}
+
+.blackhole{
+	justify-self: start;
+	margin-left: 40px;
+	margin-top: 250px;
+
+p{
+	color: $color;
+	font-family: $letra;
+	text-align: justify;
+	word-spacing: 2px;
+	font-size: 19px;
+	margin-top: 10px;
+}
+
+}
+
+@media (max-width:900px){
+
+	.blackhole{
+
+		margin-right: 180px;
+	}
+}
+
+@media (max-width:480px){
+
+	.blackhole{
+
+		margin-top: 270px;
+		margin-right: 95px;
+
+		p{
+			font-size: 15px;
+			text-align: left;
+		}
+	}
+}
+
+.barramasplanetas{
+	text-align: center;
+    background-color: #64a8df;
+    color: black;
+    height: 36px;
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+	font-weight: bold;
+	font-family: $letra;
+	z-index: 1;
+
+		a{
+			text-decoration: none;
+			color: black;
+		}
+}
+
+@media (max-width:480px){
+	.barramasplanetas{
+		font-size: 10px;
+		height: 30px;
+	}
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+
+.botonmenu{
+	width: 100%;
+	background-color: #4E94AB;
+}
+
+#btn-menu{
+	display: none;
+}
+
+.botonmenu label{
+	display: none;
+	padding: 10px;
+	margin-left: 10px;
+
+}
+
+.botonmenu label:hover{
+	cursor: pointer;
+}
+
+.menu2{
+	z-index: 1;
+}
+
+.menu2 ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.menu2 li:hover{
+	background-color: black;
+	opacity: 0.1;
+}
+
+.menu2 li a{
+	display: block;
+	padding: 15px 20px;
+	color: $color;
+	text-decoration: none;
+	font-family: $letra;
+	font-weight: bold;
+	border-right:$color 1px solid;
+}
+
+.lista1{
+	border-left: $color 1px solid;
+}
+
+@media (max-width:900px){
+
+	.botonmenu label{
+		display: block;
+	}
+
+	.menu2{
+		position: absolute;
+		background-color: #4E94AB;
+		margin-left: -70%;
+		transition: all 0.5s;
+		
+	}
+
+	.menu2 ul{
+		flex-direction: column;
+	}
+
+	.menu2 li{
+		border-top: $color 1px solid;
+	}
+
+	#btn-menu:checked ~ .menu2{
+		margin: 0;
+	}
+}
+
+.definicion{
+
+	background-color: #e8ebec;
+	padding-bottom: 50px;
+
+	 h2{
+		margin-left: 30px;
+		margin-right: 30px;
+		font-family: $letra;
+		font-weight: bold;
+		font-size: 38px;
+		text-align: center;
+		padding: 30px;
+	 }
+
+	 p{
+		font-family: $letra;
+		text-align: justify;
+		margin-top: 8px;
+		margin-left: 100px;
+		margin-right: 100px;
+		font-size: 20px;
+		line-height: 150%;
+		padding: 10px;
+	 }
+
+	 div{
+		 
+		text-align: center;
+		padding: 10px;
+
+		img{
+			vertical-align:middle;
+		}
+
+	 }
+}
+
+@media screen and (max-width:900px){
+
+	.definicion{
+
+		h2{
+			font-size: 32px;
+		}
+	}
+}
+
+@media screen and (max-width:600px){
+
+	.definicion{
+
+		h2{
+			font-size: 28px;
+		}
+
+		p{
+			font-size: 15px;
+			margin-left: 70px;
+			margin-right: 70px;
+		}
+	}
+}
+
+@media screen and (max-width:480px){
+
+	.definicion{
+
+		h2{
+			font-size: 24px;
+		}
+
+		p{
+			font-size: 14px;
+			margin-left: 40px;
+			margin-right: 40px;
+		}
+	}
+}
