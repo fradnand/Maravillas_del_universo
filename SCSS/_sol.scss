@@ -15,6 +15,16 @@ body{
 	z-index: -1;
 }
 
+@media (max-width:480px){
+	.headersol{
+		background: url('../Imagenes/fondosol.jpg') fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		max-width: auto;
+	}
+}
+
 .tituloheader{
 	color: white;
 	text-align: left;
